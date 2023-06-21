@@ -1,0 +1,322 @@
+.editor {
+	display: grid;
+	grid-template-columns: 0.3fr 2.4fr 0.4fr;
+	grid-template-rows: 1.8fr 0.2fr;
+	gap: 5px 5px;
+	grid-auto-flow: row;
+}
+
+
+
+
+
+
+.tools {
+	grid-area: 1 / 1 / 2 / 2;
+}
+
+.tools ul {
+	list-style: none;
+}
+
+.active {
+	background: #bcbaad !important;
+	color: white !important;
+}
+
+.image {
+	grid-area: 1 / 2 / 2 / 4;
+}
+
+.range {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	gap: 0px 0px;
+	grid-area: 2 / 1 / 3 / 3;
+}
+
+
+.save_button {
+	grid-area: 2 / 3 / 3 / 4;
+}
+
+
+input[type='range'] {
+	-webkit-appearance: none !important;
+	background: #198dbe;
+	height: 5px;
+	border-radius: 10px;
+}
+
+input[type='range']::-webkit-slider-thumb {
+	-webkit-appearance: none !important;
+	background: #198dbe;
+	height: 15px;
+	width: 15px;
+	border-radius: 50%;
+}
+
+/*content part */
+.content {
+	position: relative;
+	width: 90%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 20px;
+}
+
+.content #logo {
+	position: absolute;
+	top: 10px;
+	right: 20px;
+	letter-spacing: 3px;
+	font-family: 'Staatliches', cursive;
+	color: rgba(55, 86, 225, 0.5);
+}
+
+.choose_image {
+	width: 70%;
+	height: 250px;
+}
+
+.upload_img_box {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	height: 100%;
+	width: 100%;
+	cursor: pointer;
+	border: 1px dashed rgba(25, 141, 190);
+}
+
+#hint {
+	color: rgba(25, 141, 190);
+	font-size: 1.2em;
+}
+
+.upload_img_box i {
+	font-size: 2.2em;
+	color: rgba(25, 141, 190);
+}
+
+#selectedImage {
+	display: none;
+}
+
+
+/* button */
+.option-button {
+	background-color: rgba(51, 51, 51, 0.082);
+	border-radius: 8px;
+	border-width: 0;
+	color: #252525;
+	cursor: pointer;
+	display: inline-block;
+	font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 20px;
+	margin: 8px;
+	padding: 10px 12px;
+	text-align: center;
+	transition: all 200ms;
+	vertical-align: baseline;
+	white-space: nowrap;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+	width: 100px;
+
+}
+
+.editor {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+	gap: 5px 5px;
+	grid-auto-flow: row;
+}
+
+.tools {
+	grid-area: auto;
+}
+
+.tools ul {
+	list-style: none;
+}
+
+.active {
+	background: #bcbaad !important;
+	color: white !important;
+}
+
+.image {
+	grid-area: auto;
+}
+
+.range {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 1fr 1fr 1fr;
+	gap: 0px 0px;
+	justify-self: stretch;
+	align-self: center;
+	grid-area: auto;
+}
+
+input[type='range'] {
+	-webkit-appearance: none !important;
+	background: #198dbe;
+	height: 5px;
+	border-radius: 10px;
+}
+
+input[type='range']::-webkit-slider-thumb {
+	-webkit-appearance: none !important;
+	background: #198dbe;
+	height: 15px;
+	width: 15px;
+	border-radius: 50%;
+}
+
+.content {
+	position: relative;
+	width: 90%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 20px;
+}
+
+.content #logo {
+	position: absolute;
+	top: 10px;
+	right: 20px;
+	letter-spacing: 3px;
+	font-family: 'Staatliches', cursive;
+	color: rgba(55, 86, 225, 0.5);
+}
+
+.choose_image {
+	width: 70%;
+	height: 250px;
+}
+
+.upload_img_box {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	height: 100%;
+	width: 100%;
+	cursor: pointer;
+	border: 1px dashed rgba(25, 141, 190);
+}
+
+#hint {
+	color: rgba(25, 141, 190);
+	font-size: 1.2em;
+}
+
+.upload_img_box i {
+	font-size: 2.2em;
+	color: rgba(25, 141, 190);
+}
+
+#selectedImage {
+	display: none;
+}
+
+.option-button {
+	background-color: rgba(51, 51, 51, 0.082);
+	border-radius: 8px;
+	border-width: 0;
+	color: #252525;
+	cursor: pointer;
+	display: inline-block;
+	font-family: 'Haas Grot Text R Web', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 20px;
+	margin: 8px;
+	padding: 10px 12px;
+	text-align: center;
+	transition: all 200ms;
+	vertical-align: baseline;
+	white-space: nowrap;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+	width: 100px;
+}
+
+
+@media screen and (max-width: 767px) {
+	.choose_image {
+		width: 100%;
+		height: auto;
+		max-height: 300px;
+	}
+}
+
+.editor {
+	display: grid;
+	height: 100px;
+	grid-template-columns: 0.2fr 1.9fr;
+	grid-template-rows: 1.8fr 0.2fr;
+	gap: 5px 5px;
+	grid-auto-flow: row;
+}
+
+
+.tools ul {
+	list-style: none;
+	margin-bottom: 20px;
+}
+
+.tools .option-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(51, 51, 51, 0.082);
+	border-radius: 8px;
+	border-width: 0;
+	color: #252525;
+	cursor: pointer;
+	font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 20px;
+	margin-bottom: 8px;
+	padding: 10px 12px;
+	text-align: center;
+	transition: all 200ms;
+	white-space: nowrap;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+	width: 100px;
+}
+
+.image {
+	grid-area: 1 / 2 / 2 / 3;
+}
+
+.range {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 1fr 1fr 1fr;
+	gap: 0px 0px;
+	justify-self: stretch;
+	align-self: center;
+	grid-area: 2 / 2 / 3 / 3;
+}
+
+.activeTab{
+	color: #198dbe
+}
